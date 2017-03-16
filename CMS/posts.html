@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://use.fontawesome.com/24b6222c9f.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+      
+     
+    <nav class="navbar navbar-toggleable-sm navbar-inverse sticky-top">
+        <nav class="container">
+            <div class="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">AdminCMS</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages.html">Pages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="posts.html">Posts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="users.html">Users</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Welcome,nikos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+              
+            </div>
+        </nav>
+    </nav>
+     
+    
+    <div class="jumbotron jumbotron-fluid bg-inverse text-white">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-10">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"> <h1><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;Posts</h1> </li>
+                        <li class="list-inline-item"> <p class="lead"> Manage Blog Posts!!! </p> </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                                type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                          Create Content
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <a class="dropdown-item" href="#">Add Page</a>
+                          <a class="dropdown-item" href="#">Add Post</a>
+                          <a class="dropdown-item" href="#">Add User</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active">Posts</li>
+        </ol>
+    </div>
+      
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" >
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item main-color ">  <a class="card-link text-white" href="index.html"> <i class="fa fa-cog" aria-hidden="true"></i> &nbsp;Dashboard</a> </li>
+                        <li class="list-group-item list-group-item-action "> <a class="card-link" href="pages.html"> <i class="fa fa-file-text-o" aria-hidden="true"></i> &nbsp; Pages </a> </li>
+                        <li class="list-group-item list-group-item-action"> <a class="card-link" href="posts.html"> <i class="fa fa-pencil" aria-hidden="true"></i> &nbsp; Posts  </a> </li>
+                        <li class="list-group-item list-group-item-action"> <a class="card-link" href="users.html"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; Users  </a> </li>
+                        
+                    </ul>
+                </div>
+                <div class="card my-3">
+                    <div class="card-block">
+                        <h5> Disk Space Used </h5>
+                        <div class="progress my-3">
+                            <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>40%
+                        </div>
+                        <h5>Bandwith Used </h5>
+                        <div class="progress my-3">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card" id="keno">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item main-color text-white">Posts</li>
+                        <li class="list-group-item  ">
+                          <input type="text" class="form-control col-md-12 my-2 " id="extampleField" placeholder="Filter Posts">
+                        </li>
+                        <table class="table table-hover ">
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Published</th>
+                                <th>Created</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Blog Post 1</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>Dec 12, 2016</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-outline-primary mx-1">Edit</button>
+                                    <button type="button" class="btn btn-secondary btn-outline-danger">Delete</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Blog Post 2</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>Dec 13, 2016</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-outline-primary mx-1">Edit</button>
+                                    <button type="button" class="btn btn-secondary btn-outline-danger">Delete</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Blog Post 3</td>
+                                <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                                <td>Dec 13, 2016</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-outline-primary mx-1">Edit</button>
+                                    <button type="button" class="btn btn-secondary btn-outline-danger">Delete</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Blog Post 4</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>Dec 14, 2016</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-outline-primary mx-1">Edit</button>
+                                    <button type="button" class="btn btn-secondary btn-outline-danger">Delete</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Footer --> 
+    <nav class="navbar sticky-bottom navbar-light bg-inverse text-white text-center" >
+        <p id="footer-space"> -Bootstrap4 CMS- </p>
+    </nav>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
